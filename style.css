@@ -1,0 +1,531 @@
+* {
+    margin: 0%;
+    
+}
+
+body {
+    background-color: #Ffff;
+    
+}
+
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    
+        
+}
+
+div .container .box {
+    /* border: 2px solid white; */
+    
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    
+   
+}
+
+p {
+    font-family: 'Cinzel', serif;
+}
+
+
+h1 {
+    font-family: 'Great Vibes', cursive; 
+}
+.animated-text {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+.animated-text span {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.visible .animate-text {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+
+
+
+div.box.visible {
+  opacity: 1;
+  opacity: 1; 
+  transform: scale(1);
+  
+}
+
+div .first  {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* background-image: url('images/div1.png'); */
+    background-position: center;
+    height: 670px;
+    width: 385px;
+    overflow: hidden;
+    margin-top: -15px;
+    
+   
+}
+div .first .design img {
+    height: 500px;
+    width: 370px;
+    
+    
+    
+    
+}
+
+div .first .design img:nth-child(1) {
+    height: 700px;
+    animation: from-left 3s forwards;
+    width: 360px;
+    position: relative;
+
+    
+    
+}
+
+div .first .design img:nth-child(2) {
+    margin-bottom: 460px;
+    margin-left: 180px;
+    animation: from-right 3s forwards;
+    position: absolute;
+    
+}
+
+div .first .design img:nth-child(3) {
+    margin-top: 500px;
+    margin-right: 100px;
+    animation: from-left 3s forwards;
+    width: 360px;
+    position: absolute;
+    
+    
+}
+div .first .design img:nth-child(4) {
+    height: 25px;
+    width: 25px;
+    padding-top: 200px;
+    position: absolute;
+    
+}
+div .first .design img:nth-child(5) {
+    height: 160px;
+    width: 220px;
+    padding-bottom: 40px;
+    position: absolute;
+    animation: from-left 3s forwards;
+
+    
+}
+
+
+
+
+
+@keyframes from-right {
+    from {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-10%);
+        opacity: 1;
+      }
+}
+
+@keyframes from-left {
+    from {
+        transform: translateX(10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+}
+
+
+
+div .first .first-text {
+    position: absolute;
+    
+}
+
+div .first .first-text img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 420px;
+    position: absolute;
+    
+}
+
+div .first .first-text h1 {
+    position: absolute;
+    font-weight: 100;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    margin-top: -70px;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    
+
+}
+
+div .first .first-text p{
+    position:absolute;
+    margin-bottom: 320px;
+    width: 350px;
+    font-size: 15px;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    margin-left: 30px;
+}
+
+div .first h2 {
+    background-color: red;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-top: 150px;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+}
+
+div .first .header {
+    padding-left: 100px;
+    padding-top: 35px;
+    opacity: 0;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    letter-spacing: 2;
+    font-weight: 800;
+}
+
+
+div .first .header1 {
+    
+    opacity: 0;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    animation: fade-in 2s forwards;
+    padding-left: 0px;
+    font-weight: 800;
+    letter-spacing: 2;
+}
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      
+    }
+  }
+
+
+div .first .footer {
+    margin-top: 580px;
+    padding-left: 20px;
+    animation: fade-in 4s forwards;
+    letter-spacing: 2;
+    font-weight: 800;
+}
+
+div .first .footer-2 {
+    margin-top: 620px;
+    padding-left:40px;
+    animation: fade-in 4s forwards;
+    letter-spacing: 1;
+    font-weight: 800;
+}
+
+div .first .first-text #span {
+    margin-left: 10x0px;
+}
+
+
+
+span:nth-child(2) {
+    margin-left: 30px;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+  }
+  
+  .visible {
+    opacity: 1;
+
+  }
+  
+div .second {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url('images/3div.jpg');
+    background-position: center;
+    height: 560px;
+    width: 385px;
+    margin-top: -20px;
+    opacity: 0; /* Start hidden */
+    transform: scale(0.5); /* Start small */
+    transition: opacity 0.5s ease-out, transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+
+
+
+div .second .design1  {
+    margin-right: 180px;
+    rotate: 60deg;
+    position: absolute;
+    margin-top: 480px;
+    padding-bottom: 590px;
+    padding-right: 30px;
+    animation: fade-in 2s forwards;
+    width: 250px;
+    height: 400px;
+    
+}
+
+
+
+div .second-text .line1 {
+    margin-bottom: 450px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    font-weight: bold;
+    
+
+}
+
+div .second-text .line2{
+    margin-bottom: 380px;
+    position: absolute;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    padding-right: 300px;
+    padding-top: 20px;
+
+}
+div .second-text .line3 {
+    margin-bottom: 250px;
+    position: absolute;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    animation: fade-in 2s forwards;
+    padding-right: 300px;
+
+
+}
+
+div .second-text .line4 {
+    margin-bottom: 130px;
+    position: absolute;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    animation: fade-in 2s forwards;
+    padding-right: 300px;
+
+
+
+
+}
+
+div .second-text .line5 {
+    margin-top: 480px;
+    position: absolute;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+
+
+}
+
+div .second-text .line6 {
+    margin-bottom: 340px;
+    padding-left: 90px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    
+    
+
+}
+div .second-text .line7 {
+    margin-bottom: 230px;
+    padding-left: 90px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+   
+    
+
+}
+div .second-text .line8 {
+    margin-bottom: 130px;
+    padding-left: 50px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    
+    
+
+}
+div .second-text .line9 {
+    margin-bottom: 80px;
+    padding-left: 10px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    
+    
+
+
+}
+div .second-text .line10 {
+    margin-bottom: 10px;
+    padding-left: 90px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    
+
+
+}
+div .second-text .line11 {
+    margin-top: 60px;
+    padding-right: 10px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+
+
+}
+div .second-text .line12 {
+    margin-top: 200px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    margin-right: 120px;
+    
+
+
+}
+div .second-text .line13 {
+    margin-top: 110px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    margin-left: 70px;
+
+
+}
+div .second-text .line14 {
+    margin-top: 160px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    margin-left: 20px;
+
+
+
+}
+div .second-text .line15 {
+    margin-top: 250px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    margin-right: 110px;
+
+
+
+}
+div .second-text .line16 {
+    margin-top: 500px;
+    position: absolute;
+    letter-spacing: 2;
+    animation: fade-in 2s forwards;
+    text-shadow:0 10px 10px rgba(0, 0, 0, 0.3) ;
+    margin-right:80px;
+    font-weight: 800;
+    font-size: 12px;
+
+
+
+}
+
+
+
+
+
+  /* Navbar bottom */
+.navigation {
+    
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 300px;
+    margin-bottom: 0px;
+    
+  }
+  
+  .menuToggle {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #FCC8D1;
+    border: 5px solid var(--clr);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    transform: translateY(-15px);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+    
+    margin-left: 300px;
+    margin-bottom: 0px;
+    top: 510;
+  }
+
